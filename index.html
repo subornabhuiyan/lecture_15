@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <title>Modal</title>
+  </head>
+  <body>
+	      <!-- modal start -->
+
+          <!-- modal 1 -->
+          <section class="mb-4">
+              <div class="container">
+                  <div class="row">
+                        <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="m-t-Label" tabindex="-1">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="m-t-Label">Modal 1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Show a second modal and hide this one with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#mToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal fade" id="mToggle2" aria-hidden="true" aria-labelledby="m-t-leLabe2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="m-t-leLabe2">Modal 2</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Hide this modal and show the first with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#ModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal button -->
+                        <a class="btn btn-primary" data-bs-toggle="modal" href="#ModalToggle" role="button">Open first modal</a>
+                  </div>
+              </div>
+          </section>
+
+          <!-- modal 2 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="modal fade" id="MToggle" aria-hidden="true" aria-labelledby="m-t-Labe3" tabindex="-1">
+
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="m-t-Labe3">Modal 2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                Show a second modal and hide this one with the button below. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa fugiat nisi, dolor ab illo, debitis minus qui accusamus nobis voluptatibus incidunt esse modi asperiores dolores, nam dolorem impedit sit error quos. Eaque fuga voluptates minima harum! Enim tempore eligendi rem commodi, hic quisquam inventore quo nemo aliquam quod, nesciunt beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quas cupiditate, cumque excepturi incidunt fugit? Culpa quibusdam, assumenda libero excepturi veritatis velit quod illum delectus ut adipisci enim quasi repellendus asperiores illo a. Dolorem, odio cum alias dignissimos provident est iste ipsa, dolorum voluptatibus, praesentium sit possimus. Totam consequatur odit quidem, sit sequi facere itaque ut eveniet hic eligendi, impedit eum optio molestias quae maiores saepe quis. Mollitia eum laboriosam similique possimus eius quis repellendus ipsum tenetur labore. Doloremque eius dolorum praesentium, ex distinctio nobis exercitationem natus reiciendis nemo, iste asperiores. Blanditiis quidem delectus doloribus. Quo accusantium maiores mollitia voluptas nostrum, vero ipsum, voluptates harum id unde blanditiis veritatis atque consequatur dolore iste rerum, ullam fuga vel. Facilis nam fugit quasi beatae cum voluptate, ullam sint porro, dicta quibusdam accusamus enim, alias dolor aspernatur praesentium. Reprehenderit mollitia, cum perspiciatis, quaerat quia quas consequatur eum, nesciunt a assumenda vero iste veniam est dolorum nobis et quibusdam dolores quod ullam quis distinctio officiis amet. Culpa ex quidem magni exercitationem ratione quae repellendus quasi voluptatibus praesentium veritatis rem impedit inventore, sint earum et. Ea dicta est molestiae explicabo pariatur ducimus cupiditate, nostrum vel numquam laudantium maxime. Perferendis consequuntur ratione veniam perspiciatis totam vel.
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Scrollable modal 1</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-info" data-bs-toggle="modal" href="#MToggle" role="button">Open Scrollable modal</a>
+                </div>
+            </div>
+        </section>
+	      <!-- modal end -->
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
